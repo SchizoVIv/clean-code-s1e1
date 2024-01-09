@@ -145,7 +145,7 @@
   display: none;
 }
 
-.list__task-input_text {
+.list__input-task_type_text {
   display: inline-block;
   width: 224px;
 }
