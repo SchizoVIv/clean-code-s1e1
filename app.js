@@ -82,11 +82,13 @@ var editTask=function(){
 
   var listItem=this.parentNode;
 
-  var editInput=listItem.querySelector('input[type=text]');
+  var editInput=listItem.querySelector('.list__input-task');
   var label=listItem.querySelector(".list__ladel-task");
   var editBtn=listItem.querySelector(".list__button-edit");
-  var containsClass=listItem.classList.contains("list__item");
+  console.log(editInput)
+  var containsClass=editInput.classList.contains("list__input-task_type_text");
   //If class of the parent is .editmode
+  editInput.classList.toggle("list__input-task_type_text");
   if(containsClass){
 
       //switch to .editmode
@@ -99,7 +101,7 @@ var editTask=function(){
   }
 
   //toggle .editmode on the parent.
-  listItem.classList.toggle("list__item");
+  label.classList.toggle("list__ladel-task_display_none");
 };
 
 
@@ -121,6 +123,8 @@ var taskCompleted=function(){
 
   //Append the task list item to the #completed-tasks
   var listItem=this.parentNode;
+  const xItem = listItem.querySelector(".list__ladel-task");
+  xItem.classList.add("list__ladel-task-completed");
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
 
@@ -133,6 +137,8 @@ var taskIncomplete=function(){
   //When the checkbox is unchecked
   //Append the task list item to the #incompleteTasks.
   var listItem=this.parentNode;
+  const xItem = listItem.querySelector(".list__ladel-task");
+  xItem.classList.remove("list__ladel-task-completed");
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem,taskCompleted);
 }
