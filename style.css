@@ -26,7 +26,7 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.list__task-input, .list__ladel-task {
+.list__input-task, .list__ladel-task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -67,7 +67,7 @@ h3,
   margin: 0;
   text-transform: uppercase;
 }
-.list__task-input, .main__task-input {
+.list__input-task, .main__task-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -134,7 +134,7 @@ h3,
 }
 
 /* Edit Task */
-.list__task-input {
+.list__input-task {
   display:none
 }
 
