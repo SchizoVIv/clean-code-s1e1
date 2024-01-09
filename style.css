@@ -30,7 +30,7 @@
 .list__input-task, .list__ladel-task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .main__box-task {
   display: flex;
@@ -117,7 +117,7 @@
   width: 226px;
 }
 .list__input-task {
-  width: 226px
+  width: 226px;
 }
 .list__delete-img {
   height: 2em;
@@ -130,18 +130,18 @@
 
 /* Completed */
 .list__ladel-task-completed {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .list__input-task {
-  display: none
+  display: none;
 }
 
 .list__task-input_text {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .list__ladel-task_hidden {
