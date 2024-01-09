@@ -150,6 +150,6 @@
   width: 224px;
 }
 
-.list__ladel-task_hidden {
+.list__ladel-task_display_none {
   display: none;
 }
